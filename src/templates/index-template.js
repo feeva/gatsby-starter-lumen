@@ -6,6 +6,7 @@ import Sidebar from '../components/Sidebar';
 import Feed from '../components/Feed';
 import Page from '../components/Page';
 import Pagination from '../components/Pagination';
+import HeroOverlay from '../components/HeroOverlay';
 import { useSiteMetadata } from '../hooks';
 import type { PageContext, AllMarkdownRemark } from '../types';
 
@@ -15,7 +16,7 @@ type Props = {
 };
 
 const IndexTemplate = ({ data, pageContext }: Props) => {
-  const { title: siteTitle, subtitle: siteSubtitle } = useSiteMetadata();
+  const { title: siteTitle, subtitle: siteSubtitle, heroOverlay } = useSiteMetadata();
 
   const {
     currentPage,
@@ -30,18 +31,21 @@ const IndexTemplate = ({ data, pageContext }: Props) => {
   const pageTitle = currentPage > 0 ? `Posts - Page ${currentPage} - ${siteTitle}` : siteTitle;
 
   return (
-    <Layout title={pageTitle} description={siteSubtitle}>
-      <Sidebar isIndex />
-      <Page>
-        <Feed edges={edges} />
-        <Pagination
-          prevPagePath={prevPagePath}
-          nextPagePath={nextPagePath}
-          hasPrevPage={hasPrevPage}
-          hasNextPage={hasNextPage}
-        />
-      </Page>
-    </Layout>
+    <>
+      <HeroOverlay title={siteTitle} subtitle={siteSubtitle} image={heroOverlay} />
+      <Layout title={pageTitle} description={siteSubtitle}>
+        <Sidebar isIndex />
+        <Page>
+          <Feed edges={edges} />
+          <Pagination
+            prevPagePath={prevPagePath}
+            nextPagePath={nextPagePath}
+            hasPrevPage={hasPrevPage}
+            hasNextPage={hasNextPage}
+          />
+        </Page>
+      </Layout>
+    </>
   );
 };
 
@@ -64,6 +68,14 @@ export const query = graphql`
             date
             category
             description
+            featuredImage {
+              childImageSharp {
+                fluid(maxWidth: 1280) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+            postType
           }
         }
       }
