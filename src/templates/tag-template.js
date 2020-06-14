@@ -63,13 +63,21 @@ export const query = graphql`
         node {
           fields {
             slug
-            categorySlug
+            categorySlugs
           }
           frontmatter {
             title
             date
-            category
+            categories
             description
+            featuredImage {
+              childImageSharp {
+                fluid(maxWidth: 1280) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+            postType
           }
         }
       }

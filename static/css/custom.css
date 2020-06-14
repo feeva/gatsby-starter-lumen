@@ -116,7 +116,17 @@ svg:not(:root).svg-inline--fa {
     text-decoration: none
 }
 
-.katex { font-size: 1em;}
+.katex { font-size: 1.06em;}
 
 div.gatsby-resp-iframe-wrapper { max-width: 59rem; }
 div.gatsby-highlight { font-size: 1rem; }
+
+.gatsby-resp-image-wrapper { cursor: pointer; }
+img.zoomer {
+    position: fixed; transition: all 400ms ease 0s; transform-origin: top left;
+    object-fit: contain; cursor: pointer;
+}
+
+div.image-grid { max-width: 100%; display: flex; }
+div.image-grid > p { flex: 1; margin: 12px; }
+

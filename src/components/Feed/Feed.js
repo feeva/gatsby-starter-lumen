@@ -1,7 +1,7 @@
 // @flow strict
 import React from 'react';
 import { Link } from 'gatsby';
-import FeedLink from '../FeedLink';
+import FeedItem from '../FeedItem';
 import type { Edges } from '../../types';
 import styles from './Feed.module.scss';
 import { formatDate } from '../../utils';
@@ -20,15 +20,14 @@ const Feed = ({ edges }: Props) => (
           </time>
           <span className={styles['feed__item-meta-divider']} />
           <span className={styles['feed__item-meta-category']}>
-            <Link to={edge.node.fields.categorySlug} className={styles['feed__item-meta-category-link']}>{edge.node.frontmatter.category}</Link>
+            {
+              edge.node.frontmatter.categories.map((c, idx) => (
+                <Link key={c} to={edge.node.fields.categorySlugs[idx]} className={styles['feed__item-meta-category-link']}>{c}</Link>
+              )).reduce((prev, curr) => [prev, ' | ', curr])
+            }
           </span>
         </div>
-        <FeedLink className={styles['feed__item-title-link']} edge={edge}>
-          <h2 className={styles['feed__item-title']}>
-            {edge.node.frontmatter.title}
-          </h2>
-          <p className={styles['feed__item-description']}>{edge.node.frontmatter.description}</p>
-        </FeedLink>
+        <FeedItem node={edge.node}/>
       </div>
     ))}
   </div>
