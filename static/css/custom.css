@@ -128,5 +128,6 @@ img.zoomer {
 }
 
 div.image-grid { max-width: 100%; display: flex; }
-div.image-grid > p { flex: 1; margin: 12px; }
+div.image-grid > p { display: none; }
+div.image-grid > figure { flex: 1; margin: 12px; }
 

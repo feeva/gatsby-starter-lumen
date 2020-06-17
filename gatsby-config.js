@@ -117,6 +117,7 @@ module.exports = {
               withWebp: true,
               ignoreFileExtensions: [],
               linkImagesToOriginal: false,
+              showCaptions: true,
             }
           },
           {
