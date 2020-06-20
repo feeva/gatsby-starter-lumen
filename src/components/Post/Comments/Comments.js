@@ -20,7 +20,7 @@ const Comments = ({ postTitle, postSlug, link }: Props) => {
       identifier: link ? undefined : postTitle,
       title: postTitle,
       url: link || url + postSlug,
-      language: 'ko',
+      language: typeof window === 'undefined' ? 'ko' : navigator.language.slice(0, 2),
     }} />
   );
 };
