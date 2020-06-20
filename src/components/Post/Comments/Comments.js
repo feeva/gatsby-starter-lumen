@@ -8,7 +8,7 @@ type Props = {
   postSlug: string
 };
 
-const Comments = ({ postTitle, postSlug }: Props) => {
+const Comments = ({ postTitle, postSlug, link }: Props) => {
   const { url, disqusShortname } = useSiteMetadata();
 
   if (!disqusShortname) {
@@ -18,9 +18,9 @@ const Comments = ({ postTitle, postSlug }: Props) => {
   return (
     <ReactDisqusComments
       shortname={disqusShortname}
-      identifier={postTitle}
+      identifier={link ? undefined : postTitle}
       title={postTitle}
-      url={url + postSlug}
+      url={link || url + postSlug}
       language={window ? navigator.language : 'ko'}
     />
   );
