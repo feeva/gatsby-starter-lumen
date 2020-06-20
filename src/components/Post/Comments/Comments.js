@@ -21,6 +21,7 @@ const Comments = ({ postTitle, postSlug }: Props) => {
       identifier={postTitle}
       title={postTitle}
       url={url + postSlug}
+      language={window ? navigator.language : 'ko'}
     />
   );
 };
