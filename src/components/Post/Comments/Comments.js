@@ -1,6 +1,6 @@
 // @flow strict
 import React from 'react';
-import ReactDisqusComments from 'react-disqus-comments';
+import { Disqus, CommentCount } from 'gatsby-plugin-disqus';
 import { useSiteMetadata } from '../../../hooks';
 
 type Props = {
@@ -16,13 +16,12 @@ const Comments = ({ postTitle, postSlug, link }: Props) => {
   }
 
   return (
-    <ReactDisqusComments
-      shortname={disqusShortname}
-      identifier={link ? undefined : postTitle}
-      title={postTitle}
-      url={link || url + postSlug}
-      language={window ? navigator.language : 'ko'}
-    />
+    <Disqus config={{
+      identifier: link ? undefined : postTitle,
+      title: postTitle,
+      url: link || url + postSlug,
+      language: 'ko',
+    }} />
   );
 };
 

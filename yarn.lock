@@ -8466,6 +8466,11 @@ gatsby-plugin-catch-links@^2.2.1:
     "@babel/runtime" "^7.10.2"
     escape-string-regexp "^1.0.5"
 
+gatsby-plugin-disqus@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-disqus/-/gatsby-plugin-disqus-1.2.0.tgz#8579e33b983d6de957390aef5445c99e8cb38af5"
+  integrity sha512-1Vgifach9KOCTKWmOESHbGDEAVxLwg7uJZbSyohQzBqqDzfnl42SOWJhIPCOCAtKi1GcqU4JIQiWBZmN1V0Zlg==
+
 gatsby-plugin-feed@^2.4.1:
   version "2.5.5"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-feed/-/gatsby-plugin-feed-2.5.5.tgz#c25b07820376ddc7254eeeb402d68b1b101c81b0"
@@ -15773,11 +15778,6 @@ react-display-name@^0.2.4:
   version "0.2.5"
   resolved "https://registry.yarnpkg.com/react-display-name/-/react-display-name-0.2.5.tgz#304c7cbfb59ee40389d436e1a822c17fe27936c6"
   integrity sha512-I+vcaK9t4+kypiSgaiVWAipqHRXYmZIuAiS8vzFvXHHXVigg/sMKwlRgLy6LH2i3rmP+0Vzfl5lFsFRwF1r3pg==
-
-react-disqus-comments@^1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/react-disqus-comments/-/react-disqus-comments-1.4.0.tgz#bf56ff319a35d086f3070d31a4f70ed21ce3a958"
-  integrity sha512-NkCNsnBSujliii5N2HbA6Wy5z2s6GtCtPaJ0D6GWNMSKnP8wmEtQ3u2qAeG9+xHJE2cMRFmfqMpDeJtBay38RA==
 
 react-dnd-html5-backend@^7.2.0:
   version "7.7.0"
