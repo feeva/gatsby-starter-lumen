@@ -1,13 +1,17 @@
 ---
-title: "About me"
+title: 내 소개
 template: "page"
-socialImage: "/media/image-2.jpg"
 ---
 
-Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
+소프트웨어 개발자는 항상 새로이 배우고 창의적이어야 하는 직군이다. 개발자로 일한지 20년이 넘었지만
+아직도 세상엔 배울 게 많고 할 것이 많다. 부족함을 계속 느끼지만 개발자의 노력은 계속돼야 할 것 같다.
 
-![Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.](/media/image-2.jpg)
+현재 나는 [뷰티/의료 영역의 스타트업](https://oyoung.co.kr)에서 일하고 있다. 해온 것보다 앞으로 할 게 많은 스타트업이지만 직원들 모두
+사기와 의욕이 높고 가능성 역시 높은 영역이라고 본다. 해외 고객을 대상으로 하기 때문에 한국 고객과는 다르고
+업무 자체도 내가 그 동안 해온 것과는 다르지만 차근차근 성과물을 만들어 가면 좋은 결과가 있을 것이다.
 
-*Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.*
+![내가 일하는 공용 사무실](../../static/uploads/2020/office_lobby.jpg)
 
-Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus
+일 외에 나는 언어에도 관심이 있으며(영어 유튜브 보기, 스페인어 공부하기) 요즘엔 생전 처음 피아노도 연습해보고 있다.
+언젠가는 블로그에 피아노 노력의 결과를 공개하는 게 중기 목표다.
+

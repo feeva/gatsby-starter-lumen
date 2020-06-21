@@ -74,7 +74,7 @@ module.exports = {
                 allMarkdownRemark(
                   limit: 1000,
                   sort: { order: DESC, fields: [frontmatter___date] },
-                  filter: { frontmatter: { template: { eq: "post" }, draft: { ne: true }, postType: { 'blog' } } }
+                  filter: { frontmatter: { template: { eq: "post" }, draft: { ne: true }, postType: { eq: "blog" } } }
                 ) {
                   edges {
                     node {
@@ -113,7 +113,7 @@ module.exports = {
           {
             resolve: 'gatsby-remark-images',
             options: {
-              maxWidth: 960,
+              maxWidth: 1400,
               withWebp: true,
               ignoreFileExtensions: [],
               linkImagesToOriginal: false,
