@@ -2,6 +2,7 @@
 
 require('./src/assets/scss/init.scss');
 require('./static/css/prismjs/prism-dracula.css');
+require('prismjs/plugins/line-numbers/prism-line-numbers.css');
 require('./static/css/custom.css');
 
 exports.onClientEntry = () => {
