@@ -50,6 +50,10 @@
       word-break: break-word;
     }
 
+    & > ul, & > ol {
+      max-width: $layout-post-width - 40px;
+    }
+
     & img {
       max-width: 100%;
     }
