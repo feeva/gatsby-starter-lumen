@@ -42,7 +42,7 @@ const zoomImage = (e) => {
 
   setTimeout(() => {
     zoomer.style.cssText = `left: 0; top: 0; width: ${width}px; height: ${height}px;
-      transform:scale(${scale}); background-color: rgba(0,0,0,.6); opacity: 1;`;
+      transform:scale(${scale}); background-color: rgba(0,0,0,.7); opacity: 1;`;
   }, 0);
   zoomer.addEventListener('transitionend', () => { zoomer.src = loader.src; });
 
