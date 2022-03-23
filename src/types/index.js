@@ -34,7 +34,9 @@ export type Node = {
     categories?: string[],
     tags?: string[],
     title: string,
-    socialImage?: string,
+    socialImage?: {
+      publicURL: string
+    },
     featuredImage?: string,
     postType?: string,
     link?: string,
